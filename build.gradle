@@ -1,0 +1,27 @@
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://google.bintray.com/exoplayer/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        
+
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://google.bintray.com/exoplayer/' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
